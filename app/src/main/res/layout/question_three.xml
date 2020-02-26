@@ -7,6 +7,71 @@
     <!--  Start : Your code should be within this block -->
 
 
-    <!-- END    : Your code should be within this block -->
 
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:text="Question 3"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="What kind of phone are you using?"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/q3_rg"
+        android:layout_width="match_parent"
+        android:layout_height="238dp">
+
+        <RadioButton
+            android:id="@+id/q3_1"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:text="2G"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/q3_2"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:text="3G"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/q3_3"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:text="4G"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/q3_4"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Others"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="#009688"
+        android:text="NEXT"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+
+    <!-- END    : Your code should be within this block -->
 </LinearLayout>

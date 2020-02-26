@@ -2,9 +2,74 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
     <!--  Start : Your code should be within this block -->
 
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:gravity="center"
+        android:lineSpacingExtra="36sp"
+        android:text="@string/title"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="-1dp"
+        android:gravity="center"
+        android:text="@string/w_2"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_below="@+id/textView2"
+        android:gravity="center"
+        android:text="@string/w_3"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="187dp"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="1dp"
+        android:text="@string/w_4"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="2dp"
+        android:text="@string/w_5"
+        android:textColorHighlight="#009688"
+        android:textColorLink="#009688"
+        android:textCursorDrawable="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_below="@+id/checkBox"
+        android:layout_marginTop="35dp"
+        android:background="#009688"
+        android:gravity="center"
+        android:text="@string/w_6"
+        android:textColor="#000000"
+        android:textSize="24sp" />
 
     <!-- END    : Your code should be within this block -->
 </RelativeLayout>

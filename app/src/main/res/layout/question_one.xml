@@ -3,10 +3,97 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
     <!--  Start : Your code should be within this block -->
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="424dp"
+        android:layout_height="61dp"
+        android:text="@string/q1_1"
+        android:textColor="#020202"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:text="@string/q1_2"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <RadioGroup
+
+        android:id="@+id/q1_rg"
+        android:layout_width="match_parent"
+        android:layout_height="295dp">
+
+        <RadioButton
+            android:id="@+id/q1_1"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:text="Iphone"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/q1_2"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:text="Nokia"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/q1_3"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:text="Samsung"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/q1_4"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:text="MI"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/q1_5"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:text="Lenovo"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/q1_6"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:text="Sony"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/q1_7"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:text="Others"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:background="#009688"
+        android:text="NEXT"
+        android:textSize="24sp" />
 
 
     <!-- END    : Your code should be within this block -->
-
 </LinearLayout>

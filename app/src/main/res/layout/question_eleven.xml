@@ -5,8 +5,53 @@
     android:orientation="vertical">
 
     <!--  Start : Your code should be within this block -->
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:text="Question 11"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="What's your gender?"
+            android:textSize="24sp" />
 
-    <!-- END    : Your code should be within this block -->
+        <RadioGroup
+            android:id="@+id/q11_rg"
+            android:layout_width="match_parent"
+            android:layout_height="273dp">
 
+            <RadioButton
+                android:id="@+id/q11_1"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:text="Male"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/q11_2"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:text="Female"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="#009688"
+            android:text="NEXT"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <!-- END    : Your code should be within this block -->
 </LinearLayout>

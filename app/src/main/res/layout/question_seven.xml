@@ -6,7 +6,78 @@
 
     <!--  Start : Your code should be within this block -->
 
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:text="Question 7"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="In which condition will you buy a new phone?"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/q7_rg"
+        android:layout_width="match_parent"
+        android:layout_height="309dp">
+
+        <RadioButton
+            android:id="@+id/q7_1"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:text="When the old phone has been used for a year or two.(but it still works)"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/q7_2"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:text="When the old phone has been used for more than three years.(but it still works)"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/q7_3"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:text="When the old phone breaks down."
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/q7_4"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:text="When a new phone is released."
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/q7_5"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:text="Others"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="#009688"
+        android:text="NEXT"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
 
     <!-- END    : Your code should be within this block -->
-
 </LinearLayout>
