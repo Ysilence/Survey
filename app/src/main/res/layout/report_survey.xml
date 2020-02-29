@@ -16,7 +16,7 @@
     <TextView
         android:id="@+id/r_q1"
         android:layout_width="match_parent"
-        android:layout_height="44dp"
+        android:layout_height="39dp"
         android:text="1"
         android:textColor="#000000"
         android:textSize="12sp"
@@ -25,7 +25,7 @@
     <TextView
         android:id="@+id/r_q2"
         android:layout_width="match_parent"
-        android:layout_height="44dp"
+        android:layout_height="39dp"
         android:text="2"
         android:textColor="#000000"
         android:textSize="12sp"
@@ -34,7 +34,7 @@
     <TextView
         android:id="@+id/r_q3"
         android:layout_width="match_parent"
-        android:layout_height="44dp"
+        android:layout_height="39dp"
         android:text="3"
         android:textColor="#000000"
         android:textSize="12sp"
@@ -43,7 +43,7 @@
     <TextView
         android:id="@+id/r_q4"
         android:layout_width="match_parent"
-        android:layout_height="44dp"
+        android:layout_height="39dp"
         android:text="4"
         android:textColor="#000000"
         android:textSize="12sp"
@@ -52,7 +52,7 @@
     <TextView
         android:id="@+id/r_q5"
         android:layout_width="match_parent"
-        android:layout_height="44dp"
+        android:layout_height="39dp"
         android:text="5"
         android:textColor="#000000"
         android:textSize="12sp"
@@ -61,7 +61,7 @@
     <TextView
         android:id="@+id/r_q6"
         android:layout_width="match_parent"
-        android:layout_height="44dp"
+        android:layout_height="39dp"
         android:text="6"
         android:textColor="#000000"
         android:textSize="12sp"
@@ -70,7 +70,7 @@
     <TextView
         android:id="@+id/r_q7"
         android:layout_width="match_parent"
-        android:layout_height="44dp"
+        android:layout_height="39dp"
         android:text="7"
         android:textColor="#000000"
         android:textSize="12sp"
@@ -79,7 +79,7 @@
     <TextView
         android:id="@+id/r_q8"
         android:layout_width="match_parent"
-        android:layout_height="44dp"
+        android:layout_height="39dp"
         android:text="8"
         android:textColor="#000000"
         android:textSize="12sp"
@@ -88,7 +88,7 @@
     <TextView
         android:id="@+id/r_q9"
         android:layout_width="match_parent"
-        android:layout_height="44dp"
+        android:layout_height="39dp"
         android:text="9"
         android:textColor="#000000"
         android:textSize="12sp"
@@ -97,7 +97,7 @@
     <TextView
         android:id="@+id/r_q10"
         android:layout_width="match_parent"
-        android:layout_height="44dp"
+        android:layout_height="39dp"
         android:text="10"
         android:textColor="#000000"
         android:textSize="12sp"
@@ -106,7 +106,7 @@
     <TextView
         android:id="@+id/r_q11"
         android:layout_width="match_parent"
-        android:layout_height="44dp"
+        android:layout_height="39dp"
         android:text="11"
         android:textColor="#000000"
         android:textSize="12sp"
@@ -115,7 +115,7 @@
     <TextView
         android:id="@+id/r_q12"
         android:layout_width="match_parent"
-        android:layout_height="44dp"
+        android:layout_height="39dp"
         android:text="12"
         android:textColor="#000000"
         android:textSize="12sp"
@@ -124,9 +124,9 @@
     <Button
         android:id="@+id/r_exit"
         android:layout_width="match_parent"
-        android:layout_height="38dp"
+        android:layout_height="72dp"
         android:background="#009688"
-        android:text="Exit"
+        android:text="SAVE"
         android:textSize="24sp" />
 
 </LinearLayout>

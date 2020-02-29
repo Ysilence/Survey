@@ -74,6 +74,7 @@
         android:layout_width="match_parent"
         android:layout_height="72dp"
         android:background="#009688"
+        android:layout_marginTop="41dp"
         android:text="NEXT"
         android:textColor="#000000"
         android:textSize="24sp" />
