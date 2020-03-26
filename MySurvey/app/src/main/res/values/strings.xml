@@ -1,0 +1,20 @@
+<resources>
+<string name="app_name">MySurvey</string>
+<string name="permission_camera">App扫码需要用到拍摄权限</string>
+<string name="permission_external_storage">App需要用到读写权限</string>
+<string name="tips_scan_code">将二维码/条形码放入框内，即可自动扫描</string>
+<string name="qr_code">二维码</string>
+<string name="bar_code">条形码</string>
+
+<string name="title">WELCOME TO</string>
+<string name="w_2">TAKE PART IN OUR SURVEY!</string>
+<string name="w_3">Before we start,here are things you should know:</string>
+<string name="w_4">-Please be honest when making your choice.\n\n
+                       -We are just doing a reaserch so you don\'t have to fake your information.\n\n
+                       -Please follow the step we designed for you an don\'t skip any questions.
+    </string>
+<string name="w_5">I accept these requests.</string>
+<string name="w_6">LET\'S START!</string>
+<string name="q1_1">Question  1</string>
+<string name="q1_2">Which brand of phone will you choose if you are going to buy a new one?</string>
+</resources>
