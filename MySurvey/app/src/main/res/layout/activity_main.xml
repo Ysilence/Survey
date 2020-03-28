@@ -21,7 +21,7 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="50dp"
         android:layout_below="@+id/textView"
         android:layout_marginTop="-1dp"
         android:gravity="center"
@@ -32,7 +32,7 @@
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
-        android:layout_height="57dp"
+        android:layout_height="42dp"
         android:layout_below="@+id/textView2"
         android:gravity="center"
         android:text="@string/w_3"
@@ -41,7 +41,7 @@
     <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
-        android:layout_height="187dp"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/textView3"
         android:layout_marginTop="1dp"
         android:text="@string/w_4"
@@ -50,7 +50,7 @@
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="match_parent"
-        android:layout_height="85dp"
+        android:layout_height="44dp"
         android:layout_below="@+id/textView4"
         android:layout_marginTop="2dp"
         android:text="@string/w_5"
@@ -60,15 +60,52 @@
         android:textSize="18sp"
         android:textStyle="bold" />
 
+
+    <Button
+        android:id="@+id/btn_setLang"
+        android:layout_width="182dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/checkBox"
+        android:background="#3A393A"
+        android:text="@string/m_btn_SetLanguage"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    <RadioGroup
+        android:id="@+id/Ra_g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_below="@+id/btn_setLang" >
+
+        <RadioButton
+            android:id="@+id/Ra_E"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="English"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/Ra_C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="简体中文"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="72dp"
         android:layout_below="@+id/checkBox"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="163dp"
         android:background="#009688"
         android:gravity="center"
         android:text="@string/w_6"
         android:textColor="#000000"
         android:textSize="24sp" />
+
+
 </RelativeLayout>

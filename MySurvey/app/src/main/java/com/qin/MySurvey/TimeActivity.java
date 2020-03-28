@@ -47,7 +47,6 @@ public class TimeActivity extends AppCompatActivity {
         b1.setOnClickListener(this::gettime);
         b2.setOnClickListener(this::getlocation);
         b3.setOnClickListener(this::next);
-
     }
 
    //定位按键响应

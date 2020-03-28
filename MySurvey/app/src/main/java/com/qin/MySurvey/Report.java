@@ -19,7 +19,7 @@ public class Report extends AppCompatActivity {
         Intent i = getIntent();
         password = i.getStringExtra("password");
         txt_rep=findViewById(R.id.txt_rep);
-        txt_rep.setText(Show_json.save_data+"\n"+TimeActivity.time1);
+        txt_rep.setText(GetScan.save_data+"\n"+TimeActivity.time1);
     }
 
 

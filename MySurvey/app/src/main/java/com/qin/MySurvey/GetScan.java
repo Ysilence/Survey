@@ -20,7 +20,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStreamReader;
 
-public class Show_json extends AppCompatActivity {
+public class GetScan extends AppCompatActivity {
 
     int flag=0;     //Used to determine how many questions to answer
     int flag1=0;
@@ -37,7 +37,6 @@ public class Show_json extends AppCompatActivity {
     RadioButton bt_5;
     Button bt_choose;
 
-
     Intent intent;
 
     public static String save_data="your answers are here:\n \n";  //User's answer
@@ -45,7 +44,7 @@ public class Show_json extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_show_json);
+        setContentView(R.layout.activity_get_scan);
         bt_1=(RadioButton)findViewById(R.id.choose_1);
         bt_2=(RadioButton)findViewById(R.id.choose_2);
         bt_3=(RadioButton)findViewById(R.id.choose_3);
@@ -77,7 +76,6 @@ public class Show_json extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
 
         String result="";
         for(int i=0;question[i]!=null;i++){
@@ -178,14 +176,13 @@ public class Show_json extends AppCompatActivity {
                 bt_choose.setText("confirm");
             }
         }else{
-            Toast.makeText(Show_json.this,"Please choose and click to record your location and the date:",Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(Show_json.this,
+            Toast.makeText(GetScan.this,"Please choose and click to record your location and the date:",Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(GetScan.this,
                     TimeActivity.class);
             startActivity(intent);
 
         }
     }
-
 
 
     //Store user answers
@@ -195,7 +192,7 @@ public class Show_json extends AppCompatActivity {
         File sdFile = getExternalFilesDir(null);
         File saveData = new File(sdFile, "results.json");
         File saveData1 = new File(sdFile, "results.txt");
-        File saveData_internal = new File(Show_json.this.getFilesDir(), "results.json");
+        File saveData_internal = new File(GetScan.this.getFilesDir(), "results.json");
 
         try {
             FileOutputStream fout1 = new FileOutputStream(saveData1,true);
@@ -216,21 +213,20 @@ public class Show_json extends AppCompatActivity {
         }
     }
 
-
     //Read JSON file
     public String getFileFromeSD(String path){
-        String result="";
+        StringBuilder result= new StringBuilder();
         try{
             FileInputStream f = new FileInputStream(path);
             BufferedReader bis = new BufferedReader(new InputStreamReader(f));
             String line="";
             while((line = bis.readLine())!=null){
-                result += line;
+                result.append(line);
             }
         }catch (Exception e){
             e.printStackTrace();
         }
-        return result;
+        return result.toString();
     }
 
 

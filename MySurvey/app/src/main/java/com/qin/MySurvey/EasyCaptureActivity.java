@@ -10,7 +10,6 @@ import android.widget.TextView;
 
 import com.king.zxing.CaptureActivity;
 
-
 public class EasyCaptureActivity  extends CaptureActivity {
 
     @Override
