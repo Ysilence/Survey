@@ -31,4 +31,4 @@ Here is a QR code for example.
 ### 5、Finish the survey
 
 #### Here is the gif of APP demo
-![img](https://github.com/Ysilence/survey/blob/master/imagezxlingDemo/App-demo.gif)
+<img src="https://github.com/Ysilence/survey/blob/master/imagezxlingDemo/App-demo.gif?raw=true" width = 10% height = 10% />
