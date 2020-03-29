@@ -13,7 +13,7 @@
         android:id="@+id/im1"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:background="@mipmap/emoji_kids14"
+        android:background="@mipmap/scan"
         android:layout_marginTop="50dp"
         android:layout_centerHorizontal="true"
         />
