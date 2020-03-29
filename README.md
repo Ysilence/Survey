@@ -32,3 +32,5 @@ Here is a QR code for example.
 
 #### Here is the gif of APP demo
 <img src="https://github.com/Ysilence/survey/blob/master/imagezxlingDemo/App-demo.gif?raw=true" width = 10% height = 10% />
+
+The gif's url:https://github.com/Ysilence/survey/blob/master/imagezxlingDemo/App-demo.gif
