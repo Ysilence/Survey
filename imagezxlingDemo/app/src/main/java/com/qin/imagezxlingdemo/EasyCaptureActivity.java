@@ -28,6 +28,8 @@ public class EasyCaptureActivity  extends CaptureActivity {
 //                .decodeFormats(DecodeFormatManager.QR_CODE_FORMATS)//设置只识别二维码会提升速度
                 .playBeep(true)
                 .vibrate(true);
+        ExitApplication.getInstance().exit(this);
+
     }
 
 

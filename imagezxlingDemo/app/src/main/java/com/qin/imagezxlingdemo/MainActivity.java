@@ -17,6 +17,7 @@ import android.widget.Toast;
 import com.king.zxing.Intents;
 
 
+import java.util.LinkedList;
 import java.util.List;
 
 import pub.devrel.easypermissions.AfterPermissionGranted;
@@ -26,6 +27,7 @@ import pub.devrel.easypermissions.EasyPermissions;
 
 public class MainActivity extends Activity implements View.OnClickListener, LocusPassWordView.OnCompleteListener  {
 
+    public static List<Activity> activityList = new LinkedList();
     private TextView mExplainTv;
     private Button mRepaintBtn;
     private Button mConfirmBtn;
@@ -41,8 +43,10 @@ public class MainActivity extends Activity implements View.OnClickListener, Locu
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        MainActivity.activityList.add(this);
         initViews();
+
+
     }
 
 
@@ -76,12 +80,12 @@ public class MainActivity extends Activity implements View.OnClickListener, Locu
     }
 
     private void confirm(String password) {
-        Toast.makeText(MainActivity.this, "你设置的密码：" + againPassword,
-                Toast.LENGTH_SHORT).show();
+
         Intent intent = new Intent(MainActivity.this,
-                SActivity.class);
+                Choose.class);
         intent.putExtra("password", password);
         startActivity(intent);
+        ExitApplication.getInstance().exit(this);
     }
 
     @Override

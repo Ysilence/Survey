@@ -12,7 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UnlockView"></activity>
+        <activity android:name=".Choose"></activity>
+        <activity android:name=".Qrcode" />
+        <activity android:name=".Questionmake" />
+        <activity android:name=".UnlockView" />
         <activity android:name=".Report" />
         <activity android:name=".Show_json" />
         <activity android:name=".MainActivity">
@@ -23,9 +26,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".SActivity" />
-        <activity android:name=".Question_one" />
-        <activity android:name=".UnLock" />
-        <activity android:name=".TimeActivity" />
         <activity
             android:name="com.king.zxing.CaptureActivity"
             android:screenOrientation="portrait" />

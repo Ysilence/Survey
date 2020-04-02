@@ -56,6 +56,7 @@ public class SActivity  extends AppCompatActivity implements EasyPermissions.Per
 
 
 
+
     }
 
 
@@ -93,7 +94,9 @@ public class SActivity  extends AppCompatActivity implements EasyPermissions.Per
             Intent intent = new Intent(SActivity.this,
                     Show_json.class);
             startActivity(intent);
+
         }
+
     }
 
 
@@ -145,6 +148,7 @@ public class SActivity  extends AppCompatActivity implements EasyPermissions.Per
         intent.putExtra(KEY_TITLE,title);
         intent.putExtra(KEY_IS_CONTINUOUS,isContinuousScan);
         ActivityCompat.startActivityForResult(this,intent,REQUEST_CODE_SCAN,optionsCompat.toBundle());
+
     }
 
 

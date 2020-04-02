@@ -22,7 +22,7 @@
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="10dp"
-        android:text="FINISH"
+        android:text="Back 返回"
         android:layout_centerHorizontal="true"
         android:background="@color/colorPrimary"
 

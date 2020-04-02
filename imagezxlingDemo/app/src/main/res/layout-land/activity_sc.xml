@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/im1"
+        android:layout_width="426dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:background="@mipmap/scan"
+
+        />
+
+
+    <Button
+        android:id="@+id/btn0"
+        style="@style/OnClick"
+        android:layout_width="335dp"
+        android:layout_height="93dp"
+        android:layout_marginLeft="426dp"
+        android:layout_marginTop="175dp"
+        android:layout_centerVertical="true"
+        android:text="Scan to fill in the questionnaire\n扫描二维码获取问卷"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+
+</RelativeLayout>

@@ -4,8 +4,10 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -35,13 +37,22 @@ public class Show_json extends AppCompatActivity {
     RadioButton bt_3;
     RadioButton bt_4;
     RadioButton bt_5;
+
+    CheckBox ck_1;
+    CheckBox ck_2;
+    CheckBox ck_3;
+    CheckBox ck_4;
+    CheckBox ck_5;
+
     Button bt_choose;
 
 
     Intent intent;
+    String id;
+    String len;
 
-    public static String save_data="your answers are here:\n \n";  //User's answer
-
+    public static String save_data="your answers are here你的答案:\n \n";  //User's answer
+    private static final String ACTIVITY_TAG="LogDemo";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,10 +64,18 @@ public class Show_json extends AppCompatActivity {
         bt_5=(RadioButton)findViewById(R.id.choose_5);
         bt_choose=(Button)findViewById(R.id.bt_choose);
         txt_question=(TextView)findViewById(R.id.txt_questions);
+        ck_1=(CheckBox)findViewById(R.id.mul1);
+        ck_2=(CheckBox)findViewById(R.id.mul2);
+        ck_3=(CheckBox)findViewById(R.id.mul3);
+        ck_4=(CheckBox)findViewById(R.id.mul4);
+        ck_5=(CheckBox)findViewById(R.id.mul5);
+
+
+
 
 
         //Read file
-        try {
+       try {
             String show_json=SActivity.result;
             JSONObject rootObject = new JSONObject(show_json);
             JSONObject surveyObject = rootObject.getJSONObject("survey");
@@ -87,8 +106,227 @@ public class Show_json extends AppCompatActivity {
                 result+=answer[i][j]+"\n";
             }
         }
+
     }
 
+
+
+
+    void single(){
+        if(question[flag]!=null) {
+            if(flag1==0){
+                for(int i=0;answer[flag][i]!=null;i++){
+                    String temp;
+                    temp="bt_"+(i+1);
+                    switch (temp){
+                        case "bt_1":
+                            bt_1.setText(answer[0][i]);
+                            bt_1.setVisibility(View.VISIBLE);
+                            break;
+                        case "bt_2":
+                            bt_2.setText(answer[0][i]);
+                            bt_2.setVisibility(View.VISIBLE);
+                            break;
+                        case "bt_3":
+                            bt_3.setText(answer[0][i]);
+                            bt_3.setVisibility(View.VISIBLE);
+                            break;
+                        case "bt_4":
+                            bt_4.setText(answer[0][i]);
+                            bt_4.setVisibility(View.VISIBLE);
+                            break;
+                        case "bt_5":
+                            bt_5.setText(answer[0][i]);
+                            bt_5.setVisibility(View.VISIBLE);
+                            break;
+                    }
+                }
+                txt_question.setText(question[0]);
+                bt_choose.setText("CHOOSE  选择");
+                flag1=1;
+            }
+            else {
+                if(bt_1.isChecked()){
+                    flag+=1;
+                    save_data += "question" + flag + ":" + bt_1.getText().toString() + "\n";
+                }
+                if(bt_2.isChecked()){
+                    flag+=1;
+                    save_data += "question" + flag + ":" + bt_2.getText().toString() + "\n";
+                }
+                if(bt_3.isChecked()){
+                    flag+=1;
+                    save_data += "question" + flag + ":" + bt_3.getText().toString() + "\n";
+                }
+                if(bt_4.isChecked()){
+                    flag+=1;
+                    save_data += "question" + flag + ":" + bt_4.getText().toString() + "\n";
+                }
+                if(bt_5.isChecked()){
+                    flag+=1;
+                    save_data += "question" + flag + ":" + bt_5.getText().toString() + "\n";
+                }
+                if(question[flag]!=null){
+                    txt_question.setText(question[flag]);
+                }
+
+                for(int i=0;answer[flag][i]!=null;i++){
+                    String temp;
+                    temp="bt_"+(i+1);
+                    switch (temp){
+                        case "bt_1":
+                            bt_1.setText(answer[flag][i]);
+                            bt_1.setVisibility(View.VISIBLE);
+                            break;
+                        case "bt_2":
+                            bt_2.setText(answer[flag][i]);
+                            bt_2.setVisibility(View.VISIBLE);
+                            break;
+                        case "bt_3":
+                            bt_3.setText(answer[flag][i]);
+                            bt_3.setVisibility(View.VISIBLE);
+                            break;
+                        case "bt_4":
+                            bt_4.setText(answer[flag][i]);
+                            bt_4.setVisibility(View.VISIBLE);
+                            break;
+                        case "bt_5":
+                            bt_5.setText(answer[flag][i]);
+                            bt_5.setVisibility(View.VISIBLE);
+                            break;
+                    }
+                }
+            }
+            if(question[flag]== null){
+                bt_choose.setText("confirm  确认");
+            }
+        }else{
+            Intent intent = new Intent(Show_json.this,
+                    Report.class);
+            startActivity(intent);
+
+
+        }
+        }
+
+
+
+ /*   void multiple(){
+
+        if(question[flag]!=null) {
+            if(flag1==0){
+                for(int i=0;answer[flag][i]!=null;i++){
+                    String temp;
+                    temp="ck_"+(i+1);
+                    switch (temp){
+                        case "ck_1":
+                            ck_1.setText(answer[0][i]);
+                            ck_1.setVisibility(View.VISIBLE);
+                            break;
+                        case "ck_2":
+                            ck_2.setText(answer[0][i]);
+                            ck_2.setVisibility(View.VISIBLE);
+                            break;
+                        case "ck_3":
+                            ck_3.setText(answer[0][i]);
+                            ck_3.setVisibility(View.VISIBLE);
+                            break;
+                        case "ck_4":
+                            ck_4.setText(answer[0][i]);
+                            ck_4.setVisibility(View.VISIBLE);
+                            break;
+                        case "ck_5":
+                            ck_5.setText(answer[0][i]);
+                            ck_5.setVisibility(View.VISIBLE);
+                            break;
+                    }
+                }
+                txt_question.setText(question[0]);
+                bt_choose.setText("CHOOSE");
+                flag1=1;
+            }
+            else {
+                if(ck_1.isChecked()){
+                    flag+=1;
+                    save_data += "question" + flag + ":" + ck_1.getText().toString() + "\n";
+                }
+                if(ck_2.isChecked()){
+                    flag+=1;
+                    save_data += "question" + flag + ":" + ck_2.getText().toString() + "\n";
+                }
+                if(ck_3.isChecked()){
+                    flag+=1;
+                    save_data += "question" + flag + ":" + ck_3.getText().toString() + "\n";
+                }
+                if(ck_4.isChecked()){
+                    flag+=1;
+                    save_data += "question" + flag + ":" + ck_4.getText().toString() + "\n";
+                }
+                if(ck_5.isChecked()){
+                    flag+=1;
+                    save_data += "question" + flag + ":" + ck_5.getText().toString() + "\n";
+                }
+                if(question[flag]!=null){
+                    txt_question.setText(question[flag]);
+                }
+
+                for(int i=0;answer[flag][i]!=null;i++){
+                    String temp;
+                    temp="ck_"+(i+1);
+                    switch (temp){
+                        case "ck_1":
+                            ck_1.setText(answer[flag][i]);
+                            ck_1.setVisibility(View.VISIBLE);
+                            break;
+                        case "ck_2":
+                            ck_2.setText(answer[flag][i]);
+                            ck_2.setVisibility(View.VISIBLE);
+                            break;
+                        case "ck_3":
+                            ck_3.setText(answer[flag][i]);
+                            ck_3.setVisibility(View.VISIBLE);
+                            break;
+                        case "ck_4":
+                            ck_4.setText(answer[flag][i]);
+                            ck_4.setVisibility(View.VISIBLE);
+                            break;
+                        case "ck_5":
+                            ck_5.setText(answer[flag][i]);
+                            ck_5.setVisibility(View.VISIBLE);
+                            break;
+                    }
+                }
+            }
+            if(question[flag]== null){
+                bt_choose.setText("confirm");
+            }
+        }else{
+
+            Intent intent = new Intent(Show_json.this,
+                    TimeActivity.class);
+            startActivity(intent);
+
+        }
+    }
+
+
+*/
+
+
+    public void confirm(View view){
+            single();
+
+      /*  else
+        {
+            //multiple();
+        }
+
+
+       */
+    }
+
+   //多选的判断出问题了
+   /*
     public void confirm(View view){
         if(question[flag]!=null) {
             if(flag1==0){
@@ -187,6 +425,8 @@ public class Show_json extends AppCompatActivity {
     }
 
 
+
+    */
 
     //Store user answers
     private  void save_answer(String msg) {
