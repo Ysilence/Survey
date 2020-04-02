@@ -7,10 +7,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+
+        android:layout_toRightOf="@id/questype"
         android:layout_marginTop="0dp"
         android:text="Set problem   设置问题"
-        android:textSize="24sp"
+        android:textSize="15sp"
         android:textColor="#000000"
         />
 
@@ -20,8 +21,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="-2dp"
-        android:layout_marginTop="2dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
         android:orientation="vertical">>
 
         <RadioButton
@@ -29,14 +30,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="multiple 多选"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
         <RadioButton
             android:id="@+id/rbsingle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="single 单选"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
     </RadioGroup>
 
     <TextView
@@ -46,64 +47,65 @@
         android:layout_marginTop="65dp"
         android:text="Q:"
         android:textColor="#000000"
-        android:textSize="24sp" />
+        android:textSize="15sp" />
 
     <EditText
         android:id="@+id/et_question"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="25sp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="65dp" />
+        android:layout_marginTop="65dp"
+        android:textSize="25sp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/et_question"
 
-        android:layout_marginTop="100dp"
         android:text="A1:"
-        android:textSize="24sp"
+        android:textSize="15sp"
         android:textColor="#000000"
         />
 
     <EditText
         android:id="@+id/et_option1"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="25sp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="100dp" />
+        android:layout_below="@+id/et_question"
+        />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:layout_marginTop="135dp"
+        android:layout_below="@+id/et_option1"
         android:text="A2:"
-        android:textSize="24sp"
+        android:textSize="15sp"
         android:textColor="#000000"
         />
     <EditText
         android:id="@+id/et_option2"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="25dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="135dp"
+        android:layout_below="@+id/et_option1"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_marginTop="170dp"
+        android:layout_below="@+id/et_option2"
         android:text="A3:"
-        android:textSize="24sp"
+        android:textSize="15sp"
         android:textColor="#000000"
         />
     <EditText
         android:id="@+id/et_option3"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="25sp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="170dp"
+        android:layout_below="@+id/et_option2"
         />
 
 
@@ -111,17 +113,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_marginTop="205dp"
+        android:layout_below="@+id/et_option3"
         android:text="A4:"
-        android:textSize="24sp"
+        android:textSize="15sp"
         android:textColor="#000000"
         />
     <EditText
         android:id="@+id/et_option4"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="25sp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="205dp"
+        android:layout_below="@+id/et_option3"
         />
 
 
@@ -130,9 +132,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="240dp"
+        android:layout_below="@+id/et_option4"
         android:onClick="next"
-        android:text="NEXT  下一步 " />
+        android:text="NEXT  下一步 "
+        android:textSize="15sp"
+        />
 
 
 </RelativeLayout>
