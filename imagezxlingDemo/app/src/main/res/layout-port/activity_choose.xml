@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:text="Fill in the questionnaire  填写问卷"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="100dp"
         />
 
 
@@ -19,7 +19,7 @@
         android:id="@+id/bt_make"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="200dp"
         android:text="Generate questionnaire 生成问卷" />
 
 
