@@ -201,9 +201,11 @@ public class Show_json extends AppCompatActivity {
                 bt_choose.setText("confirm  确认");
             }
         }else{
+            save_answer(save_data);
             Intent intent = new Intent(Show_json.this,
                     Report.class);
             startActivity(intent);
+
 
 
         }
