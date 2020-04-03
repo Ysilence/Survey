@@ -73,6 +73,6 @@ public class Questionmake extends AppCompatActivity {
         answer=Json;
        Intent intent = new Intent(this, Qrcode.class);
        startActivity(intent);
-       ExitApplication.getInstance().exit(this);
+
    }
 }
